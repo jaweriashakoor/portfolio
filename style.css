@@ -1,0 +1,11 @@
+:root { --main-blue: #0077B5; --text-grey: #404040; --bg: #ffffff; }
+
+body { font-family: sans-serif; margin: 0; color: var(--text-grey); }
+header { background: #f3f2ef; padding: 50px 20px; text-align: center; }
+.profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 3px solid white; }
+h1 { color: var(--main-blue); margin: 10px 0; }
+.quote { font-style: italic; color: #666; }
+
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; max-width: 1000px; margin: auto; }
+.card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+.btn { display: inline-block; padding: 10px 20px; background: var(--main-blue); color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
