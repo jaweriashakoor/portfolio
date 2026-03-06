@@ -1,11 +1,71 @@
-:root { --main-blue: #0077B5; --text-grey: #404040; --bg: #ffffff; }
+/* Professional Branded Portfolio CSS */
+:root {
+    --linkedin-blue: #0077B5;
+    --text-color: #333;
+    --bg-light: #f3f2ef;
+    --card-bg: #ffffff;
+}
 
-body { font-family: sans-serif; margin: 0; color: var(--text-grey); }
-header { background: #f3f2ef; padding: 50px 20px; text-align: center; }
-.profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 3px solid white; }
-h1 { color: var(--main-blue); margin: 10px 0; }
-.quote { font-style: italic; color: #666; }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
 
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; max-width: 1000px; margin: auto; }
-.card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
-.btn { display: inline-block; padding: 10px 20px; background: var(--main-blue); color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+header {
+    background: var(--card-bg);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--linkedin-blue);
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5rem; color: var(--linkedin-blue); margin: 10px 0; }
+.quote { font-style: italic; color: #555; font-size: 1.2rem; }
+
+#projects {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--linkedin-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 15px;
+}
