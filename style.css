@@ -35,3 +35,58 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
 .contact-icons a:hover { color: #ffffff; transform: scale(1.1); }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Header Background Gradient */
+header {
+    background: linear-gradient(135deg, #001f3f, #0a0a0a);
+    padding: 60px 20px;
+    border-bottom: 3px solid #0077B5;
+    text-align: center;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #0077B5;
+    margin-bottom: 20px;
+}
+
+/* Typography for the header section */
+.header-container h1 {
+    color: #f3f2ef;
+    margin: 10px 0;
+}
+
+.role-tag {
+    color: #0077B5;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.quote {
+    font-style: italic;
+    color: #cccccc;
+}
+.skills-tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-tags span {
+    border: 1px solid #0077B5;
+    color: #0077B5;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.skills-tags span:hover {
+    background: #0077B5;
+    color: white;
+}
