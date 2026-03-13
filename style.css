@@ -92,3 +92,23 @@ header {
     background: #0077B5;
     color: white;
 }
+/* Styling for Education, Experience, and Project sections */
+#education, #experience, #projects {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #161616;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    border-color: #0077B5;
+    transform: translateY(-5px);
+}
