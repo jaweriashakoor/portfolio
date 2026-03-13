@@ -1,89 +1,43 @@
-:root {
-    --primary-blue: #0077B5;
-    --dark-bg: #0a0a0a;
-    --card-bg: #161616;
-    --text-light: #f3f2ef;
+/* Banner & Hero Styling */
+.hero-banner {
+    background: #0077B5; /* LinkedIn Blue */
+    padding: 80px 20px;
+    color: #f3f2ef;
+    border-bottom: 5px solid #005582;
 }
 
-body {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    text-align: center;
+.hero-code {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    opacity: 0.9;
 }
 
-header {
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, #001f3f, var(--dark-bg));
-}
-
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 3px solid var(--primary-blue);
-    margin-bottom: 20px;
-}
-
-section { padding: 80px 20px; }
-
-.container, .journey-grid, .project-grid {
-    max-width: 1000px;
+/* New About Section Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.journey-grid, .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.journey-card, .card {
-    background: var(--card-bg);
+.about-card {
+    background: #161616;
+    padding: 20px;
+    border-radius: 10px;
     border: 1px solid #333;
-    padding: 30px;
-    border-radius: 15px;
-    transition: 0.3s;
 }
 
-.journey-card:hover, .card:hover {
-    border-color: var(--primary-blue);
-    transform: translateY(-10px);
-}
-.professional-quote {
-    background: #1a1a1a;
-    border-left: 5px solid var(--primary-blue);
-    padding: 25px;
-    margin: 40px auto;
-    max-width: 700px;
-    font-style: italic;
-    font-size: 1.4rem;
-    color: #e0e0e0;
-    border-radius: 0 10px 10px 0;
-}
-
-.professional-quote footer {
-    display: block;
-    margin-top: 15px;
-    font-size: 1rem;
-    color: var(--primary-blue);
-    font-weight: bold;
-    font-style: normal;
-}
-
-h2 {
+/* Contact Icons */
+.contact-icons a {
     font-size: 2.5rem;
-    color: var(--primary-blue);
-    margin-bottom: 40px;
+    color: #f3f2ef;
+    margin: 0 20px;
+    transition: transform 0.3s, color 0.3s;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--primary-blue);
-    color: var(--primary-blue);
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+.contact-icons a:hover {
+    color: #0077B5;
+    transform: scale(1.2);
 }
