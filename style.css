@@ -38,10 +38,12 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
 
 /* Header Background Gradient */
 header {
-    background: linear-gradient(135deg, #001f3f, #0a0a0a);
-    padding: 60px 20px;
-    border-bottom: 3px solid #0077B5;
+    /* This creates a smooth transition from deep blue to your dark page background */
+    background: linear-gradient(to bottom, #001f3f, #0a0a0a);
+    padding: 80px 20px;
     text-align: center;
+    /* This removes the solid border line */
+    border-bottom: none; 
 }
 
 /* Profile Picture Styling */
