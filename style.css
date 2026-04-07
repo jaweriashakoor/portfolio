@@ -5,9 +5,22 @@
     --text-light: #f3f2ef;
 }
 
-body { background-color: var(--dark-bg); color: var(--text-light); font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
+body { 
+    background-color: var(--dark-bg); 
+    color: var(--text-light); 
+    font-family: 'Segoe UI', sans-serif; 
+    margin: 0; 
+    text-align: center; 
+}
 
-/* Banner Styling */
+/* Banner & Header Styling */
+header {
+    background: linear-gradient(to bottom, #001f3f, #0a0a0a);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: none; 
+}
+
 .hero-banner {
     background: linear-gradient(135deg, #001f3f, #0a0a0a);
     padding: 80px 20px;
@@ -15,54 +28,19 @@ body { background-color: var(--dark-bg); color: var(--text-light); font-family: 
     animation: fadeIn 1.5s ease-in;
 }
 
-.profile-pic { width: 160px; height: 160px; border-radius: 50%; border: 3px solid var(--primary-blue); margin-bottom: 20px; }
+.profile-pic { 
+    width: 160px; 
+    height: 160px; 
+    border-radius: 50%; 
+    border: 3px solid var(--primary-blue); 
+    margin-bottom: 20px; 
+}
 
 h1 { font-size: 2.5rem; color: var(--text-light); }
-.hero-code { font-family: 'Courier New', monospace; font-size: 1.2rem; opacity: 0.9; }
-
-section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
-h2 { color: var(--primary-blue); margin-bottom: 30px; }
-
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-
-.card {
-    background: var(--card-bg); border: 1px solid #333; padding: 25px; border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-.card:hover { transform: translateY(-10px); }
-
-.contact-icons a { font-size: 2.5rem; color: var(--primary-blue); margin: 0 20px; transition: 0.3s; }
-.contact-icons a:hover { color: #ffffff; transform: scale(1.1); }
-
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-/* Header Background Gradient */
-header {
-    /* This creates a smooth transition from deep blue to your dark page background */
-    background: linear-gradient(to bottom, #001f3f, #0a0a0a);
-    padding: 80px 20px;
-    text-align: center;
-    /* This removes the solid border line */
-    border-bottom: none; 
-}
-
-/* Profile Picture Styling */
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 3px solid #0077B5;
-    margin-bottom: 20px;
-}
-
-/* Typography for the header section */
-.header-container h1 {
-    color: #f3f2ef;
-    margin: 10px 0;
-}
+.header-container h1 { margin: 10px 0; }
 
 .role-tag {
-    color: #0077B5;
+    color: var(--primary-blue);
     font-weight: bold;
     margin: 5px 0;
 }
@@ -71,6 +49,8 @@ header {
     font-style: italic;
     color: #cccccc;
 }
+
+/* Skills Tags (Top Section) */
 .skills-tags {
     margin-top: 20px;
     display: flex;
@@ -80,8 +60,8 @@ header {
 }
 
 .skills-tags span {
-    border: 1px solid #0077B5;
-    color: #0077B5;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -89,26 +69,76 @@ header {
 }
 
 .skills-tags span:hover {
-    background: #0077B5;
+    background: var(--primary-blue);
     color: white;
 }
-/* Styling for Education, Experience, and Project sections */
-#education, #experience, #projects {
-    padding: 40px 20px;
+
+/* Section Layouts */
+section, #education, #experience, #projects, #technical-skills {
+    padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.card {
-    background: #161616;
-    border: 1px solid #333;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+h2 { color: var(--primary-blue); margin-bottom: 30px; }
+
+/* Grid & Card System */
+.project-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
 }
 
-.card:hover {
-    border-color: #0077B5;
-    transform: translateY(-5px);
+.card {
+    background: var(--card-bg); 
+    border: 1px solid #333; 
+    padding: 25px; 
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left; /* Better readability for project info */
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    border-color: var(--primary-blue);
+}
+
+/* Project Category Titles */
+.category-title {
+    margin: 50px 0 25px 0;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Technical Skills Specific Styling */
+#technical-skills .card h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+#technical-skills .card p {
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+/* Contact Icons */
+.contact-icons a { font-size: 2.5rem; color: var(--primary-blue); margin: 0 20px; transition: 0.3s; }
+.contact-icons a:hover { color: #ffffff; transform: scale(1.1); }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .category-title { font-size: 1.3rem; }
 }
