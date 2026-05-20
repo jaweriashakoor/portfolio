@@ -74,7 +74,7 @@ h1 { font-size: 2.5rem; color: var(--text-light); }
 }
 
 /* Section Layouts */
-section, #education, #experience, #projects, #technical-skills {
+section, #education, #experience, #projects, #technical-skills, #certifications {
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -161,6 +161,15 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
 }
 .card .btn:hover {
     background-color: #005a8a;
+}
+
+/* Certification Metadata Styling */
+.cert-meta {
+    font-size: 0.85rem;
+    color: var(--primary-blue);
+    margin-top: -5px;
+    margin-bottom: 15px;
+    opacity: 0.9;
 }
 
 /* Animations */
