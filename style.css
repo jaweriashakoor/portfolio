@@ -117,6 +117,18 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
     text-align: left;
 }
 
+/* Sub-Category Subheading Additions */
+.sub-category-title {
+    margin: 30px 0 15px 0;
+    font-size: 1.15rem;
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    text-align: left;
+}
+
 /* Technical Skills Specific Styling */
 #technical-skills .card h3 {
     color: var(--primary-blue);
@@ -134,6 +146,23 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
 .contact-icons a { font-size: 2.5rem; color: var(--primary-blue); margin: 0 20px; transition: 0.3s; }
 .contact-icons a:hover { color: #ffffff; transform: scale(1.1); }
 
+/* Buttons inside Cards (Keeps styling native to elements) */
+.card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+.card .btn:hover {
+    background-color: #005a8a;
+}
+
 /* Animations */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
@@ -141,4 +170,5 @@ h2 { color: var(--primary-blue); margin-bottom: 30px; }
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     .category-title { font-size: 1.3rem; }
+    .sub-category-title { font-size: 1.05rem; }
 }
