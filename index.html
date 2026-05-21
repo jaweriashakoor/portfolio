@@ -3,318 +3,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaweria Shakoor | Portfolio</title>
+    <title>Jaweria Shakoor | AI & ML Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-    <div class="header-container">
-        <img src="profile.jpg" alt="Jaweria Shakoor" class="profile-pic">
-        <h1>Jaweria Shakoor</h1>
-        <p class="role-tag">Software Engineering Graduate | Aspiring Python & AI/ML Developer</p>
-        <p class="quote">"From Backend to Brainpower — Bringing Data to Life Through Code."</p>
-        <div class="skills-tags">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Data Analysis</span>
-        <span>Backend Development</span>
-        <span>SQL</span>
-</div>
-    </div>
+
+    <!-- Animated Background Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Navigation Dots -->
+    <nav class="side-nav">
+        <a href="#hero" class="nav-dot active" data-label="Home"></a>
+        <a href="#about" class="nav-dot" data-label="About"></a>
+        <a href="#technical-skills" class="nav-dot" data-label="Skills"></a>
+        <a href="#education" class="nav-dot" data-label="Education"></a>
+        <a href="#experience" class="nav-dot" data-label="Experience"></a>
+        <a href="#projects" class="nav-dot" data-label="Projects"></a>
+        <a href="#certifications" class="nav-dot" data-label="Certifications"></a>
+        <a href="#contact" class="nav-dot" data-label="Contact"></a>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <header id="hero">
+        <div class="hero-grid">
+            <div class="hero-left reveal-left">
+                <span class="hero-eyebrow">
+                    <span class="dot-pulse"></span>
+                    Available for Opportunities
+                </span>
+                <h1 class="hero-name">Jaweria<br><span class="name-accent">Shakoor</span></h1>
+                <p class="hero-role">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </p>
+                <p class="hero-quote">"From Backend to Brainpower — Bringing Data to Life Through Code."</p>
+
+                <div class="skill-chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Data Analysis</span>
+                    <span class="chip">Backend Dev</span>
+                    <span class="chip">SQL</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-ghost">Let's Connect</a>
+                </div>
+            </div>
+
+            <div class="hero-right reveal-right">
+                <div class="profile-frame">
+                    <div class="profile-ring ring-1"></div>
+                    <div class="profile-ring ring-2"></div>
+                    <div class="profile-ring ring-3"></div>
+                    <img src="profile.jpg" alt="Jaweria Shakoor" class="profile-pic">
+                    <div class="profile-badge">
+                        <i class="fas fa-code"></i>
+                        <span>SE Graduate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Strip -->
+        <div class="stat-strip">
+            <div class="stat">
+                <span class="stat-num" data-count="20">0</span><span class="stat-sym">+</span>
+                <p>ML Projects</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-count="6">0</span><span class="stat-sym"></span>
+                <p>Certifications</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-count="4">0</span><span class="stat-sym">yrs</span>
+                <p>Engineering Study</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-count="2">0</span><span class="stat-sym">+</span>
+                <p>Industry Roles</p>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I bridge the gap between complex data and actionable intelligence. With a background in Software Engineering and a passion for Artificial Intelligence, I specialize in building scalable Python backends and machine learning models that solve real-world problems. I don’t just write code; I design systems that turn raw data into meaningful outcomes.</p>
-    </section>
-    <section id="technical-skills">
-    <h2>Technical Skills</h2>
-    <div class="project-grid">
-        <div class="card">
-            <h3><i class="fas fa-code"></i> Programming</h3>
-            <p>Python, C++, SQL, HTML, CSS</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-brain"></i> AI & Data</h3>
-            <p>Machine Learning, Data Analysis, Statistical Analysis, Data Visualization</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-book-open"></i> Libraries</h3>
-            <p>NumPy, Pandas, Matplotlib, Scikit-learn</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-server"></i> Frameworks</h3>
-            <p>Django, REST APIs, CRUD Operations</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-tools"></i> Tools & Databases</h3>
-            <p>Git, GitHub, Jupyter Notebook, MySQL, VS Code</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-paint-brush"></i> Design</h3>
-            <p>Figma, Canva, UI/UX Design, Prototyping</p>
-        </div>
-    </div>
-    </section>
-    <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-        <h3>BS Software Engineering</h3>
-        <p><strong>The Islamia University of Bahawalpur</strong></p>
-        <p>Session: 2021 – 2025</p>
-    </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="project-grid">
-            <div class="card">
-                <h3>AI Software Developer</h3>
-                <p><strong>BuiltinSoft</strong></p>
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="section-wrapper">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Who I Am</span>
             </div>
-            <div class="card">
-                <h3>UI/UX Designer</h3>
-                <p><strong>Rivon.ai</strong></p>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-    <h2>Featured Projects</h2>
-
-    <h3 class="category-title"><i class="fas fa-robot"></i> AI & Conversational Agents</h3>
-    <div class="project-grid">
-        <div class="card">
-            <h3>AI Chatbot Development Suite</h3>
-            <p>Developed an AI chatbot implementing probabilistic text generation using Markov chains and OpenAI.</p>
-            <a href="https://github.com/jaweriashakoor/AI-Chatbot-Development-Suite-Markov-OpenAI-" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Python Markov Chatbot</h3>
-            <p>A memory-augmented, N-Gram Markov Chain chatbot built from the ground up in Python.</p>
-            <a href="https://github.com/jaweriashakoor/python-markov-chatbot" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>AI-Powered Blood Donation System</h3>
-            <p>Developed a management platform integrated with an AI chatbot for donor registration and tracking.</p>
-            <a href="https://github.com/jaweriashakoor/AI-Powered-Blood-Donation-Management-System-with-Personalized-Chatbot" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h3 class="category-title"><i class="fas fa-magic"></i> Automation & Bot Development</h3>
-    <div class="project-grid">
-        <div class="card">
-            <h3>WhatsApp Automation Bot</h3>
-            <p>Python-based bot for automated messaging and communication tasks.</p>
-            <a href="https://github.com/jaweriashakoor/whatsapp-automation-bot" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h3 class="category-title"><i class="fas fa-chart-line"></i> Data Science</h3>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Exploratory Data Analysis (Smartphones)</h3>
-            <p>Performed EDA on smartphone datasets to identify pricing and feature trends using Pandas and Matplotlib.</p>
-            <a href="https://github.com/jaweriashakoor/Exploratory-Data-Analysis-of-Smart-Phones" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Competitive App Performance Analysis</h3>
-            <p>Conducted comparative analysis of mobile app metrics and usage patterns using Python.</p>
-            <a href="https://github.com/jaweriashakoor/Competitive-App-Performance-Analysis" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h3 class="category-title"><i class="fas fa-brain"></i> Machine Learning — Supervised Learning</h3>
-    
-    <h4 class="sub-category-title"><i class="fas fa-calculator"></i> Regression Algorithms</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Continuous Price Prediction</h3>
-            <p>Ordinary Least Squares Linear Regression pipeline mapping real estate valuations utilizing raw metric space attributes.</p>
-            <a href="https://github.com/jaweriashakoor/Continuous-Price-Prediction-LinearRegression" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Fish Weight Linear Estimation</h3>
-            <p>Biological morphometrics system using continuous single-variable trend lines to estimate specimen mass from length input matrices.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Fish-Weight-LinearRegression" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Delhi Weather & AQI Forecasting</h3>
-            <p>Built an ML model using Linear Regression to forecast environmental trends, air quality index boundaries, and temperature shifts.</p>
-            <a href="https://github.com/jaweriashakoor/Delhi-Weather-AQI-Forecasting" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h4 class="sub-category-title"><i class="fas fa-filter"></i> Classification Algorithms</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Diabetes Risk Classification</h3>
-            <p>Implements signature sigmoidal class boundaries to map biological features and age vectors into clinical evaluation targets.</p>
-            <a href="https://github.com/jaweriashakoor/Diabetes-Risk-Classification-LogisticRegression" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>SMS Spam Filter Pipeline</h3>
-            <p>Natural Language Processing infrastructure utilizing Multinomial Naive Bayes models and conditional token occurrence probabilities.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-SMS-Spam-NaiveBayes" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h4 class="sub-category-title"><i class="fas fa-layer-group"></i> Multi-Objective Tree & Proximity Engines (Both Tasks)</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Tech Burnout Tree Analysis</h3>
-            <p>Executes parallel classification and regression decision trees evaluating variance reduction and Gini impurity node partitions.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Tech-Burnout-DecisionTrees" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Istanbul Housing Random Forest</h3>
-            <p>A 50-tree bootstrap bagging ensemble model predicting real estate valuation targets and quantile pricing tiers simultaneously.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Istanbul-Housing-RandomForest" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Smartphone Usage Proximity Tracking</h3>
-            <p>Dual instance-based K-Nearest Neighbors system mapping standardized Euclidean vector coordinates to identify addiction boundaries.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Smartphone-Usage-KNN" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Image Diagnostics Support Vector Machine</h3>
-            <p>High-dimensional OpenCV image vector pipeline parsing 4,096 pixels across maximum-margin hyperplanes and non-linear RBF kernels.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Image-Classification-SVM" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Supervised Neural Networks</h3>
-            <p>Multi-Layer Perceptrons and feedforward deep learning architectures optimized via gradient descent for complex target maps.</p>
-            <a href="https://github.com/jaweriashakoor/Supervised-Neural-Networks" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h3 class="category-title"><i class="fas fa-network-wired"></i> Machine Learning — Unsupervised Learning</h3>
-    
-    <h4 class="sub-category-title"><i class="fas fa-project-diagram"></i> Clustering Algorithms</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>K-Means Segmenter Engine</h3>
-            <p>Unsupervised cluster mapping model optimizing centroid tracking coordinates through iterative inertia reductions.</p>
-            <a href="https://github.com/jaweriashakoor/K-Means-Clustering" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Agglomerative Hierarchical Clustering</h3>
-            <p>Bottom-up linkage analysis constructing spatial dendrogram trees to extract topological relationship patterns.</p>
-            <a href="https://github.com/jaweriashakoor/Hierarchical-Clustering" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>DBSCAN Anomaly Detector</h3>
-            <p>Density-based spatial cluster pipeline grouping heavy core densities while isolating scattered geometric noise outliers.</p>
-            <a href="https://github.com/jaweriashakoor/DBSCAN" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Gaussian Mixture Models (GMM)</h3>
-            <p>Probabilistic cluster allocation pipeline leveraging expectation-maximization iterations to map soft component data memberships.</p>
-            <a href="https://github.com/jaweriashakoor/GMM" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h4 class="sub-category-title"><i class="fas fa-compress-arrows-alt"></i> Dimensionality Reduction</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Principal Component Analysis (PCA)</h3>
-            <p>Linear orthogonal transformations map coordinates along directions maximizing variance projection indices.</p>
-            <a href="https://github.com/jaweriashakoor/PCA" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Non-Linear Manifold t-SNE Mapping</h3>
-            <p>High-dimensional compression matching local similarities via heavy-tailed Student-t probability distributions.</p>
-            <a href="https://github.com/jaweriashakoor/NonLinear-Dimensionality-Reduction-tSNE" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Deep Functional Autoencoders</h3>
-            <p>Self-supervised neural structures processing inputs through bottle-necked hidden layers to optimize reconstruction fidelity.</p>
-            <a href="https://github.com/jaweriashakoor/Autoencoders" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-
-    <h4 class="sub-category-title"><i class="fas fa-shopping-basket"></i> Association Rules</h4>
-    <div class="project-grid">
-        <div class="card">
-            <h3>Apriori Association Rule Miner</h3>
-            <p>Market basket transaction miner analyzing database sets through support, confidence, and metric lift thresholds.</p>
-            <a href="https://github.com/jaweriashakoor/Apriori-Association-Rules" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-    <h3 class="category-title"><i class="fas fa-server"></i> Web & Backend Development</h3>
-    <div class="project-grid">
-        <div class="card">
-            <h3>School Management System</h3>
-            <p>Full-featured management platform built with Django and MySQL.</p>
-            <a href="https://github.com/jaweriashakoor/School-Management-System" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Django Realtime Chatapp</h3>
-            <p>Web-based chat application supporting real-time communication.</p>
-            <a href="https://github.com/jaweriashakoor/django-realtime-chatapp" class="btn" target="_blank">View Repo</a>
-        </div>
-        <div class="card">
-            <h3>Django Login System</h3>
-            <p>Secure authentication system with registration and session management.</p>
-            <a href="https://github.com/jaweriashakoor/django-login-system" class="btn" target="_blank">View Repo</a>
-        </div>
-    </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="project-grid">
-            <div class="card">
-                <h3>Understanding Data Science</h3>
-                <p><strong>DataCamp</strong></p>
-                <p class="cert-meta">Completed: Sep 2025 | ID: #42,861,664</p>
-                <p>Foundational data literacy covering fundamental analytical concepts, structural definitions, and data roles.</p>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/42861664" class="btn" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="card">
-                <h3>Introduction to Python</h3>
-                <p><strong>DataCamp</strong></p>
-                <p class="cert-meta">Completed: Sep 2025 | ID: #42,889,753</p>
-                <p>Core programming fundamentals introducing variable manipulation, standard scalar list operations, and NumPy array mathematics.</p>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/42889753" class="btn" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="card">
-                <h3>Introduction to Python for Developers</h3>
-                <p><strong>DataCamp</strong></p>
-                <p class="cert-meta">Completed: Sep 2025 | ID: #42,866,166</p>
-                <p>Developer-focused workflows managing programmatic environments, structural error processing, and clean scripting methodologies.</p>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/42866166" class="btn" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="card">
-                <h3>Intermediate Python</h3>
-                <p><strong>DataCamp</strong></p>
-                <p class="cert-meta">Completed: Jan 2026 | ID: #42,907,062</p>
-                <p>Advanced algorithmic controls introducing visual Matplotlib tools, conditional logic structures, and pandas DataFrame parsing.</p>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/42907062" class="btn" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="card">
-                <h3>Data Manipulation with pandas</h3>
-                <p><strong>DataCamp</strong></p>
-                <p class="cert-meta">Completed: Apr 2026 | ID: #45,717,151</p>
-                <p>Advanced matrix manipulation methods including sorting, subset indexes, missing value profiling, and explicit relational dataframe merges.</p>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/45717151" class="btn" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="card">
-                <h3>Python for Data Science, AI & Development</h3>
-                <p><strong>IBM (Coursera)</strong></p>
-                <p class="cert-meta">Completed: May 2026</p>
-                <p>Advanced program development covering object-oriented models (OOP), API web scrapers, data files ingestion, and deep AI/ML pipelines.</p>
-                <a href="https://coursera.org/verify/VPZU4HMY9DRC" class="btn" target="_blank">Verify Certificate</a>
+            <h2 class="section-title reveal-up">About Me</h2>
+            <div class="about-layout">
+                <div class="about-text reveal-up">
+                    <p>I bridge the gap between complex data and actionable intelligence. With a background in Software Engineering and a passion for Artificial Intelligence, I specialize in building scalable Python backends and machine learning models that solve real-world problems.</p>
+                    <p>I don't just write code — I design systems that turn raw data into meaningful outcomes. Every model I build, every pipeline I architect, tells a story from noise to clarity.</p>
+                </div>
+                <div class="about-keywords reveal-right">
+                    <div class="keyword-tag">Analytical</div>
+                    <div class="keyword-tag">Innovative</div>
+                    <div class="keyword-tag">Detail-Oriented</div>
+                    <div class="keyword-tag">Data-Driven</div>
+                    <div class="keyword-tag">Problem Solver</div>
+                    <div class="keyword-tag">Creative Thinker</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Let's Connect</h2>
-        <div class="contact-icons">
-            <a href="mailto:jaweriashakoor.se.iub.pk"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa.me/+923152789471" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- ═══════════════ TECHNICAL SKILLS ═══════════════ -->
+    <section id="technical-skills" class="section-wrapper alt-bg">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Capabilities</span>
+            </div>
+            <h2 class="section-title reveal-up">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal-up" style="--delay:0.1s">
+                    <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>Python · C++ · SQL · HTML · CSS</p>
+                </div>
+                <div class="skill-card reveal-up" style="--delay:0.2s">
+                    <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Data</h3>
+                    <p>Machine Learning · Data Analysis · Statistical Analysis · Data Visualization</p>
+                </div>
+                <div class="skill-card reveal-up" style="--delay:0.3s">
+                    <div class="skill-icon-wrap"><i class="fas fa-book-open"></i></div>
+                    <h3>Libraries</h3>
+                    <p>NumPy · Pandas · Matplotlib · Scikit-learn</p>
+                </div>
+                <div class="skill-card reveal-up" style="--delay:0.4s">
+                    <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
+                    <h3>Frameworks</h3>
+                    <p>Django · REST APIs · CRUD Operations</p>
+                </div>
+                <div class="skill-card reveal-up" style="--delay:0.5s">
+                    <div class="skill-icon-wrap"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Databases</h3>
+                    <p>Git · GitHub · Jupyter Notebook · MySQL · VS Code</p>
+                </div>
+                <div class="skill-card reveal-up" style="--delay:0.6s">
+                    <div class="skill-icon-wrap"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Design</h3>
+                    <p>Figma · Canva · UI/UX Design · Prototyping</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section id="education" class="section-wrapper">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Academic Background</span>
+            </div>
+            <h2 class="section-title reveal-up">Education</h2>
+            <div class="edu-card reveal-up">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-info">
+                    <h3>BS Software Engineering</h3>
+                    <p class="edu-inst">The Islamia University of Bahawalpur</p>
+                    <span class="edu-date">2021 – 2025</span>
+                </div>
+                <div class="edu-badge">Bachelor's</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section id="experience" class="section-wrapper alt-bg">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Work History</span>
+            </div>
+            <h2 class="section-title reveal-up">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="exp-item reveal-left">
+                    <div class="exp-connector"><div class="exp-node"></div></div>
+                    <div class="exp-card">
+                        <div class="exp-icon"><i class="fas fa-robot"></i></div>
+                        <div>
+                            <h3>AI Software Developer</h3>
+                            <p class="exp-company">BuiltinSoft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-item reveal-right">
+                    <div class="exp-connector"><div class="exp-node"></div></div>
+                    <div class="exp-card">
+                        <div class="exp-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <div>
+                            <h3>UI/UX Designer</h3>
+                            <p class="exp-company">Rivon.ai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects" class="section-wrapper">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">My Work</span>
+            </div>
+            <h2 class="section-title reveal-up">Featured Projects</h2>
+
+            <!-- AI & Conversational Agents -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & Conversational Agents</h3>
+                </div>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top">
+                            <span class="proj-tag">NLP</span>
+                            <span class="proj-tag">OpenAI</span>
+                        </div>
+                        <h4>AI Chatbot Development Suite</h4>
+                        <p>Developed an AI chatbot implementing probabilistic text generation using Markov chains and OpenAI.</p>
+                        <a href="https://github.com/jaweriashakoor/AI-Chatbot-Development-Suite-Markov-OpenAI-" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top">
+                            <span class="proj-tag">Python</span>
+                            <span class="proj-tag">Markov</span>
+                        </div>
+                        <h4>Python Markov Chatbot</h4>
+                        <p>A memory-augmented, N-Gram Markov Chain chatbot built from the ground up in Python.</p>
+                        <a href="https://github.com/jaweriashakoor/python-markov-chatbot" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top">
+                            <span class="proj-tag">AI</span>
+                            <span class="proj-tag">Django</span>
+                        </div>
+                        <h4>AI-Powered Blood Donation System</h4>
+                        <p>Management platform integrated with an AI chatbot for donor registration and tracking.</p>
+                        <a href="https://github.com/jaweriashakoor/AI-Powered-Blood-Donation-Management-System-with-Personalized-Chatbot" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automation -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-magic"></i>
+                    <h3>Automation & Bot Development</h3>
+                </div>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top">
+                            <span class="proj-tag">Python</span>
+                            <span class="proj-tag">Automation</span>
+                        </div>
+                        <h4>WhatsApp Automation Bot</h4>
+                        <p>Python-based bot for automated messaging and communication tasks.</p>
+                        <a href="https://github.com/jaweriashakoor/whatsapp-automation-bot" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                </div>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top">
+                            <span class="proj-tag">EDA</span>
+                            <span class="proj-tag">Pandas</span>
+                        </div>
+                        <h4>Exploratory Data Analysis — Smartphones</h4>
+                        <p>Performed EDA on smartphone datasets to identify pricing and feature trends using Pandas and Matplotlib.</p>
+                        <a href="https://github.com/jaweriashakoor/Exploratory-Data-Analysis-of-Smart-Phones" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top">
+                            <span class="proj-tag">Analysis</span>
+                            <span class="proj-tag">Python</span>
+                        </div>
+                        <h4>Competitive App Performance Analysis</h4>
+                        <p>Comparative analysis of mobile app metrics and usage patterns using Python.</p>
+                        <a href="https://github.com/jaweriashakoor/Competitive-App-Performance-Analysis" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supervised Learning -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning — Supervised Learning</h3>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-calculator"></i> Regression Algorithms</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Regression</span><span class="proj-tag">Real Estate</span></div>
+                        <h4>Continuous Price Prediction</h4>
+                        <p>Ordinary Least Squares Linear Regression pipeline mapping real estate valuations utilizing raw metric space attributes.</p>
+                        <a href="https://github.com/jaweriashakoor/Continuous-Price-Prediction-LinearRegression" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">Regression</span><span class="proj-tag">Biology</span></div>
+                        <h4>Fish Weight Linear Estimation</h4>
+                        <p>Biological morphometrics system using continuous single-variable trend lines to estimate specimen mass from length input matrices.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Fish-Weight-LinearRegression" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top"><span class="proj-tag">Forecasting</span><span class="proj-tag">AQI</span></div>
+                        <h4>Delhi Weather & AQI Forecasting</h4>
+                        <p>ML model using Linear Regression to forecast environmental trends, air quality index, and temperature shifts.</p>
+                        <a href="https://github.com/jaweriashakoor/Delhi-Weather-AQI-Forecasting" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-filter"></i> Classification Algorithms</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Classification</span><span class="proj-tag">Health</span></div>
+                        <h4>Diabetes Risk Classification</h4>
+                        <p>Implements sigmoidal class boundaries to map biological features and age vectors into clinical evaluation targets.</p>
+                        <a href="https://github.com/jaweriashakoor/Diabetes-Risk-Classification-LogisticRegression" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">NLP</span><span class="proj-tag">Naive Bayes</span></div>
+                        <h4>SMS Spam Filter Pipeline</h4>
+                        <p>NLP infrastructure utilizing Multinomial Naive Bayes models and conditional token occurrence probabilities.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-SMS-Spam-NaiveBayes" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-layer-group"></i> Tree & Proximity Ensemble Models</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Decision Tree</span><span class="proj-tag">Dual Task</span></div>
+                        <h4>Tech Burnout Tree Analysis</h4>
+                        <p>Parallel classification and regression decision trees evaluating variance reduction and Gini impurity node partitions.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Tech-Burnout-DecisionTrees" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">Random Forest</span><span class="proj-tag">Ensemble</span></div>
+                        <h4>Istanbul Housing Random Forest</h4>
+                        <p>50-tree bootstrap bagging ensemble model predicting real estate valuation targets and quantile pricing tiers simultaneously.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Istanbul-Housing-RandomForest" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top"><span class="proj-tag">KNN</span><span class="proj-tag">Behavioral</span></div>
+                        <h4>Smartphone Usage Proximity Tracking</h4>
+                        <p>Dual instance-based K-Nearest Neighbors system mapping standardized Euclidean vector coordinates to identify addiction boundaries.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Smartphone-Usage-KNN" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.4s">
+                        <div class="proj-top"><span class="proj-tag">SVM</span><span class="proj-tag">OpenCV</span></div>
+                        <h4>Image Diagnostics Support Vector Machine</h4>
+                        <p>High-dimensional OpenCV image vector pipeline parsing 4,096 pixels across maximum-margin hyperplanes and non-linear RBF kernels.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Image-Classification-SVM" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.5s">
+                        <div class="proj-top"><span class="proj-tag">Deep Learning</span><span class="proj-tag">MLP</span></div>
+                        <h4>Supervised Neural Networks</h4>
+                        <p>Multi-Layer Perceptrons and feedforward deep learning architectures optimized via gradient descent for complex target maps.</p>
+                        <a href="https://github.com/jaweriashakoor/Supervised-Neural-Networks" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unsupervised Learning -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Machine Learning — Unsupervised Learning</h3>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-project-diagram"></i> Clustering Algorithms</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Clustering</span><span class="proj-tag">K-Means</span></div>
+                        <h4>K-Means Segmenter Engine</h4>
+                        <p>Unsupervised cluster mapping model optimizing centroid tracking coordinates through iterative inertia reductions.</p>
+                        <a href="https://github.com/jaweriashakoor/K-Means-Clustering" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">Hierarchical</span><span class="proj-tag">Dendrogram</span></div>
+                        <h4>Agglomerative Hierarchical Clustering</h4>
+                        <p>Bottom-up linkage analysis constructing spatial dendrogram trees to extract topological relationship patterns.</p>
+                        <a href="https://github.com/jaweriashakoor/Hierarchical-Clustering" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top"><span class="proj-tag">DBSCAN</span><span class="proj-tag">Anomaly</span></div>
+                        <h4>DBSCAN Anomaly Detector</h4>
+                        <p>Density-based spatial cluster pipeline grouping heavy core densities while isolating scattered geometric noise outliers.</p>
+                        <a href="https://github.com/jaweriashakoor/DBSCAN" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.4s">
+                        <div class="proj-top"><span class="proj-tag">GMM</span><span class="proj-tag">Probabilistic</span></div>
+                        <h4>Gaussian Mixture Models</h4>
+                        <p>Probabilistic cluster allocation pipeline leveraging expectation-maximization iterations to map soft component data memberships.</p>
+                        <a href="https://github.com/jaweriashakoor/GMM" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-compress-arrows-alt"></i> Dimensionality Reduction</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">PCA</span><span class="proj-tag">Linear</span></div>
+                        <h4>Principal Component Analysis</h4>
+                        <p>Linear orthogonal transformations map coordinates along directions maximizing variance projection indices.</p>
+                        <a href="https://github.com/jaweriashakoor/PCA" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">t-SNE</span><span class="proj-tag">Non-Linear</span></div>
+                        <h4>Non-Linear Manifold t-SNE Mapping</h4>
+                        <p>High-dimensional compression matching local similarities via heavy-tailed Student-t probability distributions.</p>
+                        <a href="https://github.com/jaweriashakoor/NonLinear-Dimensionality-Reduction-tSNE" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top"><span class="proj-tag">Autoencoder</span><span class="proj-tag">Deep</span></div>
+                        <h4>Deep Functional Autoencoders</h4>
+                        <p>Self-supervised neural structures processing inputs through bottlenecked hidden layers to optimize reconstruction fidelity.</p>
+                        <a href="https://github.com/jaweriashakoor/Autoencoders" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <p class="sub-label"><i class="fas fa-shopping-basket"></i> Association Rules</p>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Apriori</span><span class="proj-tag">Market Basket</span></div>
+                        <h4>Apriori Association Rule Miner</h4>
+                        <p>Market basket transaction miner analyzing database sets through support, confidence, and metric lift thresholds.</p>
+                        <a href="https://github.com/jaweriashakoor/Apriori-Association-Rules" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web & Backend -->
+            <div class="proj-category reveal-up">
+                <div class="cat-header">
+                    <i class="fas fa-server"></i>
+                    <h3>Web & Backend Development</h3>
+                </div>
+                <div class="project-grid">
+                    <div class="proj-card reveal-up" style="--delay:0.1s">
+                        <div class="proj-top"><span class="proj-tag">Django</span><span class="proj-tag">MySQL</span></div>
+                        <h4>School Management System</h4>
+                        <p>Full-featured management platform built with Django and MySQL.</p>
+                        <a href="https://github.com/jaweriashakoor/School-Management-System" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.2s">
+                        <div class="proj-top"><span class="proj-tag">Django</span><span class="proj-tag">Real-Time</span></div>
+                        <h4>Django Realtime Chat App</h4>
+                        <p>Web-based chat application supporting real-time communication.</p>
+                        <a href="https://github.com/jaweriashakoor/django-realtime-chatapp" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                    <div class="proj-card reveal-up" style="--delay:0.3s">
+                        <div class="proj-top"><span class="proj-tag">Auth</span><span class="proj-tag">Security</span></div>
+                        <h4>Django Login System</h4>
+                        <p>Secure authentication system with registration and session management.</p>
+                        <a href="https://github.com/jaweriashakoor/django-login-system" class="proj-btn" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+    <section id="certifications" class="section-wrapper alt-bg">
+        <div class="section-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Credentials</span>
+            </div>
+            <h2 class="section-title reveal-up">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card reveal-up" style="--delay:0.1s">
+                    <div class="cert-logo">DC</div>
+                    <div class="cert-info">
+                        <h4>Understanding Data Science</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-meta">Sep 2025 &nbsp;·&nbsp; ID #42,861,664</p>
+                        <p class="cert-desc">Foundational data literacy covering fundamental analytical concepts, structural definitions, and data roles.</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/42861664" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card reveal-up" style="--delay:0.2s">
+                    <div class="cert-logo">DC</div>
+                    <div class="cert-info">
+                        <h4>Introduction to Python</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-meta">Sep 2025 &nbsp;·&nbsp; ID #42,889,753</p>
+                        <p class="cert-desc">Core programming fundamentals introducing variable manipulation, list operations, and NumPy array mathematics.</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/42889753" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card reveal-up" style="--delay:0.3s">
+                    <div class="cert-logo">DC</div>
+                    <div class="cert-info">
+                        <h4>Introduction to Python for Developers</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-meta">Sep 2025 &nbsp;·&nbsp; ID #42,866,166</p>
+                        <p class="cert-desc">Developer-focused workflows managing programmatic environments, error processing, and clean scripting methodologies.</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/42866166" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card reveal-up" style="--delay:0.4s">
+                    <div class="cert-logo">DC</div>
+                    <div class="cert-info">
+                        <h4>Intermediate Python</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-meta">Jan 2026 &nbsp;·&nbsp; ID #42,907,062</p>
+                        <p class="cert-desc">Advanced algorithmic controls introducing Matplotlib tools, conditional logic structures, and pandas DataFrame parsing.</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/42907062" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card reveal-up" style="--delay:0.5s">
+                    <div class="cert-logo">DC</div>
+                    <div class="cert-info">
+                        <h4>Data Manipulation with pandas</h4>
+                        <p class="cert-issuer">DataCamp</p>
+                        <p class="cert-meta">Apr 2026 &nbsp;·&nbsp; ID #45,717,151</p>
+                        <p class="cert-desc">Advanced matrix manipulation including sorting, subset indexes, missing value profiling, and relational dataframe merges.</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/45717151" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card reveal-up" style="--delay:0.6s">
+                    <div class="cert-logo">IBM</div>
+                    <div class="cert-info">
+                        <h4>Python for Data Science, AI & Development</h4>
+                        <p class="cert-issuer">IBM · Coursera</p>
+                        <p class="cert-meta">May 2026</p>
+                        <p class="cert-desc">Advanced program development covering OOP, API web scrapers, data file ingestion, and deep AI/ML pipelines.</p>
+                        <a href="https://coursera.org/verify/VPZU4HMY9DRC" class="cert-link" target="_blank">Verify <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section-wrapper contact-section">
+        <div class="section-inner contact-inner">
+            <div class="section-label">
+                <span class="label-line"></span>
+                <span class="label-text">Get In Touch</span>
+            </div>
+            <h2 class="section-title reveal-up">Let's Build Something<br><span class="name-accent">Together</span></h2>
+            <p class="contact-sub reveal-up">Open to AI/ML roles, backend development opportunities, and exciting collaborations.</p>
+            <div class="contact-actions reveal-up">
+                <a href="mailto:jaweriashakoor.se.iub.pk" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Send Email</span>
+                </a>
+                <a href="https://wa.me/+923152789471" target="_blank" class="contact-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed & developed by <span class="name-accent">Jaweria Shakoor</span> &nbsp;·&nbsp; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
